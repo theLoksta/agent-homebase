@@ -1,0 +1,16 @@
+# ado.config.example.yml
+#
+# ADO-specific tokens for the ado-timesheet skill and agent.
+# Add this block to your project.config.yml (alongside the existing sections).
+#
+# Then regenerate: python init.py --config config/project.config.yml
+
+ado:
+  org:             "fwcdev"                             # ADO organisation name
+  mcp_url:         "https://mcp.dev.azure.com/fwcdev"   # Remote MCP server URL
+  primary_account: "you@yourorg.gov.au"                 # Primary work account email
+  service_account: "service-account@yourorg.gov.au"     # Service/automation account email (leave blank if none)
+  project:         "Your Project Name"                  # Main ADO project name
+  repos:           "Repo One, Repo Two"                 # Comma-separated repos to search for commits
+  phase:           "Your Current Phase"                 # Current engagement/delivery phase name
+  week_start_day:  "Saturday"                           # First day of the timesheet week

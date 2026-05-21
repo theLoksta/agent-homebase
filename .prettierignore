@@ -1,0 +1,3 @@
+# YAML files — Prettier's formatting fights alignment-style comments
+*.yml
+*.yaml
