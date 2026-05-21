@@ -12,3 +12,10 @@ truth for setup, build, test, architecture, and PR conventions in this repo.
   source under `skills/`, `instructions/`, or `agents/` instead.
 - When in doubt about a skill's contract, prefer the source `*.skill.md`
   over the resolved `SKILL.md`.
+
+## Git workflow
+
+- `origin` is the personal fork (`theLoksta/agent-homebase`) — always push branches here.
+- `upstream` is the source repo (`j78f88/agent-homebase`) — never push to it directly.
+- Before creating a branch, sync main: `git fetch upstream && git merge upstream/main`.
+- Branch off `main` using Conventional Commit prefixes (`feat/`, `fix/`, `docs/`, `chore/`).
